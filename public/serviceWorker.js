@@ -1,4 +1,5 @@
 console.warn("from public forlder")
+/*
 var STATIC_CACHE_NAME = "amit-pwa";
 var DYNAMIC_CACHE_NAME = "dynamic-pwa";
   
@@ -52,3 +53,4 @@ self.addEventListener("activate", (event) => {
     })
   );
 });
+*/
