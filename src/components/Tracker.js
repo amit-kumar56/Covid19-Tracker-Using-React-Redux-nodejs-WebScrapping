@@ -9,9 +9,9 @@ const Tracker = () => {
     }, []);
 
     const getProducts = async () => {
-        //let result = await fetch('http://localhost:5000/statedata',{method: 'GET',});
+        let result = await fetch('http://localhost:5000/statedata',{method: 'GET',});
 
-        let result = await fetch('https://covid-19-tracker-state-wise.herokuapp.com/statedata',{mode: "no-cors"});
+        //let result = await fetch('https://covid-19-tracker-state-wise.herokuapp.com/statedata',{mode: "no-cors"});
         result = await result.json();
         setRecords(result);
         //localStorage.setItem("user", JSON.stringify(result))
