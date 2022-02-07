@@ -10,7 +10,9 @@ const Slider = (props) => {
     }, []);
 
     const getTotal = async () => {
-        let result = await fetch('https://covid-19-tracker-state-wise.herokuapp.com/total');
+        //let result = await fetch('http://localhost:5000/total');
+
+        let result = await fetch('https://covid-19-tracker-state-wise.herokuapp.com:8084/total');
         result = await result.json();
         console.log(result[0])
         setTotal(result[0]);
