@@ -4,10 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import serviceWorker from './serviceWorkerDev';
+
+import {createStore} from 'redux'
+import {Provider} from 'react-redux'
+import rootReducer from './service/reducers/rootReducers'
+const store=createStore(rootReducer)
+
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 serviceWorker();

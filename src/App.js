@@ -1,8 +1,11 @@
 import './App.css';
-import Tracker from './components/Tracker';
+import TrackerContainers from './containers/TrackerContainers';
+//import StateContainers from './containers/stateContainer';
+
 import 'bootstrap/dist/css/bootstrap.css'
 import HeaderComponent from './components/HeaderComponent';
 import Slider from './components/Slider';
+import StateContainer from './containers/StateContainer';
 
 function App() {
   return (
@@ -10,8 +13,8 @@ function App() {
 
       <HeaderComponent />
       <Slider />
-      <Tracker />
-
+      <TrackerContainers />
+      <StateContainer/>
     </div>
   );
 }
